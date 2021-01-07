@@ -1,0 +1,6 @@
+framework module Pods_hotnews_hotnewsUITests {
+  umbrella header "Pods-hotnews-hotnewsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
