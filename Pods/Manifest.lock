@@ -1,3 +1,38 @@
-PODFILE CHECKSUM: f5801701b72c7fc2b50f933bbcbadf930976cdf5
+PODS:
+  - Alamofire (5.2.2)
+  - PINCache (3.0.2):
+    - PINCache/Arc-exception-safe (= 3.0.2)
+    - PINCache/Core (= 3.0.2)
+  - PINCache/Arc-exception-safe (3.0.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.2):
+    - PINOperation (~> 1.2.0)
+  - PINOperation (1.2)
+  - PINRemoteImage (3.0.1):
+    - PINRemoteImage/PINCache (= 3.0.1)
+  - PINRemoteImage/Core (3.0.1):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.1):
+    - PINCache (~> 3.0.1)
+    - PINRemoteImage/Core
+
+DEPENDENCIES:
+  - Alamofire
+  - PINRemoteImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  PINCache: bea7c404c360f6fe0f6ee783c5cd14e778fa2aab
+  PINOperation: 3a967a927e7867e61976c6cc23e5770416449fbc
+  PINRemoteImage: 3b7cedb118c2d357f87e9eabc7c81ba0202cb236
+
+PODFILE CHECKSUM: 7642de5be2348f1ab98ae9d7da65bd32fde6c1da
 
 COCOAPODS: 1.9.3
