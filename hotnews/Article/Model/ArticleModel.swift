@@ -15,7 +15,8 @@ struct ArticleModel: Decodable {
 // MARK: - Article
 struct Article: Decodable {
     let source: SourceNews
-    let author, title, articleDescription: String
+    let title, articleDescription: String
+    let author: String?
     let url: String
     let urlToImage: String
     let publishedAt: String

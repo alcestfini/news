@@ -47,12 +47,24 @@ class ArticleViewController: BaseViewController {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return articleModel?.articles.count ?? 0
         }
-        
+
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = listArticles.dequeueReusableCell(withIdentifier: "articlesIdentifier") as! ArticleTableViewCell
             
             let articlesModel: Article = (articleModel?.articles[indexPath.row])!
             cell.articlesLabel.text = articlesModel.content
+            
+            let articleCat = ArticlesTapGesture(target: self, action: #selector(ArticleViewController.openArticle))
+            cell.articlesView.isUserInteractionEnabled = true
+            articleCat.articles = articlesModel.url
+            cell.articlesView.addGestureRecognizer(articleCat)
             return cell
+        }
+        
+        @objc func openArticle(sender: ArticlesTapGesture){
+            let changePass = DetailViewController()
+            changePass.url = sender.articles
+            changePass.modalPresentationStyle = .fullScreen
+            self.present(changePass, animated: true, completion: nil)
         }
 }
