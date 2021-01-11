@@ -1,5 +1,41 @@
 PODS:
   - Alamofire (5.2.2)
+  - MaterialComponents/AnimationTiming (118.0.0)
+  - MaterialComponents/Availability (118.0.0)
+  - MaterialComponents/Cards (118.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (118.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (118.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Color (118.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Icons/Base (118.0.0)
+  - MaterialComponents/private/Icons/ic_check_circle (118.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (118.0.0)
+  - MaterialComponents/Ripple (118.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (118.0.0)
+  - MaterialComponents/ShadowLayer (118.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (118.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
   - PINCache (3.0.2):
     - PINCache/Arc-exception-safe (= 3.0.2)
     - PINCache/Core (= 3.0.2)
@@ -18,21 +54,24 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - MaterialComponents/Cards
   - PINRemoteImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - MaterialComponents
     - PINCache
     - PINOperation
     - PINRemoteImage
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  MaterialComponents: 333a09d55de4bc53e0e2e08f178c6f29cfe8645f
   PINCache: bea7c404c360f6fe0f6ee783c5cd14e778fa2aab
   PINOperation: 3a967a927e7867e61976c6cc23e5770416449fbc
   PINRemoteImage: 3b7cedb118c2d357f87e9eabc7c81ba0202cb236
 
-PODFILE CHECKSUM: 7642de5be2348f1ab98ae9d7da65bd32fde6c1da
+PODFILE CHECKSUM: 6fb96d5ad442299abc26228370220509d389181e
 
 COCOAPODS: 1.9.3

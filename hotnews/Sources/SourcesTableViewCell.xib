@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="372" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-QE-eoi">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-QE-eoi" customClass="MDCCard">
                         <rect key="frame" x="0.0" y="0.0" width="372" height="87"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCB-ps-aOf">
@@ -45,6 +45,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="sourcesLabel" destination="hCB-ps-aOf" id="C0Y-I0-ILE"/>
+                <outlet property="sourcesView" destination="Sii-QE-eoi" id="oyv-hO-KBS"/>
             </connections>
             <point key="canvasLocation" x="153.62318840579712" y="73.995535714285708"/>
         </tableViewCell>

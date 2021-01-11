@@ -6,6 +6,7 @@ target 'hotnews' do
   use_frameworks!
 	 pod 'Alamofire' 
 	 pod 'PINRemoteImage'  
+ 	 pod 'MaterialComponents/Cards'
   # Pods for hotnews
 
   target 'hotnewsTests' do

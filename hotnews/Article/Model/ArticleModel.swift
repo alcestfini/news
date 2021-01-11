@@ -14,11 +14,11 @@ struct ArticleModel: Decodable {
 
 // MARK: - Article
 struct Article: Decodable {
-    let source: Source
+    let source: SourceNews
     let author, title, articleDescription: String
     let url: String
     let urlToImage: String
-    let publishedAt: Date
+    let publishedAt: String
     let content: String
 
     enum CodingKeys: String, CodingKey {
@@ -29,7 +29,7 @@ struct Article: Decodable {
 }
 
 // MARK: - Source
-struct SourceNews: Codable {
+struct SourceNews: Decodable {
     let id: String
     let name: String
 }

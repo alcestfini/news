@@ -11,8 +11,10 @@ import Alamofire
 class SourceViewController: BaseViewController {
     @IBOutlet weak var listCategories: UITableView!
     @IBOutlet weak var backButton: UIBarButtonItem!
+    
     var category : String!
     var sourceModel : SourceModel!
+    var articleModel : ArticleModel!
     
     
     override func viewDidLoad() {
@@ -51,8 +53,21 @@ extension SourceViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = listCategories.dequeueReusableCell(withIdentifier: "sourcesIdentifier") as! SourcesTableViewCell
         
         let sourcesModel: Source = (sourceModel?.sources[indexPath.row])!
-        
         cell.sourcesLabel.text = sourcesModel.name
+        
+        
+        let sourcesCat = SourcesTapGesture(target: self, action: #selector(SourceViewController.openNews))
+        cell.sourcesView.isUserInteractionEnabled = true
+        sourcesCat.sources = sourcesModel.id
+        cell.sourcesView.addGestureRecognizer(sourcesCat)
+        
         return cell
+    }
+    
+    @objc func openNews(sender: SourcesTapGesture){
+        let changePass = ArticleViewController()
+        changePass.sources = sender.sources
+        changePass.modalPresentationStyle = .fullScreen
+        self.present(changePass, animated: true, completion: nil)
     }
 }
