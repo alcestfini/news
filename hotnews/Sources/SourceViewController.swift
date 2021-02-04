@@ -53,7 +53,7 @@ extension SourceViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = listCategories.dequeueReusableCell(withIdentifier: "sourcesIdentifier") as! SourcesTableViewCell
         
         let sourcesModel: Source = (sourceModel?.sources[indexPath.row])!
-        cell.sourcesLabel.text = sourcesModel.name
+        cell.sourcesText.text = sourcesModel.name
         
         
         let sourcesCat = SourcesTapGesture(target: self, action: #selector(SourceViewController.openNews))

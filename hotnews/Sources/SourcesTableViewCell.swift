@@ -9,8 +9,8 @@ import UIKit
 import MaterialComponents.MaterialCards
 
 class SourcesTableViewCell: UITableViewCell {
-    @IBOutlet weak var sourcesLabel: UILabel!
     @IBOutlet weak var sourcesView: MDCCard!
+    @IBOutlet weak var sourcesText: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

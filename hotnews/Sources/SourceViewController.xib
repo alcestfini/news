@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,16 +21,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" id="TIi-0L-jyt">
+                <navigationBar contentMode="scaleToFill" translucent="NO" id="TIi-0L-jyt">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="barTintColor" name="Color"/>
                     <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <offsetWrapper key="textShadowOffset" horizontal="900" vertical="0.0"/>
                     </textAttributes>
                     <items>
                         <navigationItem title="Sources" id="Tyh-gD-x6C">
                             <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="5E7-MF-Hc4">
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="-1" id="CrQ-lW-g8n"/>
                                 </connections>
@@ -37,7 +40,7 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-ZN-BR7">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-ZN-BR7">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <color key="sectionIndexBackgroundColor" systemColor="systemGray2Color"/>
@@ -49,13 +52,16 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Md1-ZN-BR7" secondAttribute="bottom" id="LMV-cQ-hw3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Md1-ZN-BR7" secondAttribute="trailing" id="YOf-V1-UrC"/>
                 <constraint firstItem="Md1-ZN-BR7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b57-v4-lJG"/>
-                <constraint firstItem="Md1-ZN-BR7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="the-2V-gaA"/>
+                <constraint firstItem="Md1-ZN-BR7" firstAttribute="top" secondItem="TIi-0L-jyt" secondAttribute="bottom" id="pUc-E3-Hqd"/>
             </constraints>
             <point key="canvasLocation" x="40.579710144927539" y="75"/>
         </view>
     </objects>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <namedColor name="Color">
+            <color red="0.6588235294117647" green="0.26666666666666666" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

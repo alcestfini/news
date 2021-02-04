@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,10 +23,32 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-Pe-fIq">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-Od-xzw">
-                            <rect key="frame" x="0.0" y="8" width="414" height="810"/>
+                        <navigationBar contentMode="scaleToFill" translucent="NO" id="AiQ-Hx-6CE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" name="Color"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <offsetWrapper key="textShadowOffset" horizontal="900" vertical="0.0"/>
+                            </textAttributes>
+                            <items>
+                                <navigationItem title="Detail Articles" id="Qkr-rS-lve">
+                                    <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="dUh-kf-Cjy">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="-1" id="gnP-DV-e8i"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-Od-xzw">
+                            <rect key="frame" x="0.0" y="73" width="414" height="669"/>
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <wkWebViewConfiguration key="configuration">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="669" id="0Gn-pB-Aq0"/>
+                            </constraints>
+                            <wkWebViewConfiguration key="configuration" selectionGranularity="character">
                                 <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                 <wkPreferences key="preferences"/>
                             </wkWebViewConfiguration>
@@ -33,10 +56,9 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="D0z-Od-xzw" firstAttribute="top" secondItem="GAu-Pe-fIq" secondAttribute="top" constant="8" id="3hN-y0-Kne"/>
-                        <constraint firstAttribute="bottom" secondItem="D0z-Od-xzw" secondAttribute="bottom" id="DrZ-c3-68B"/>
-                        <constraint firstAttribute="trailing" secondItem="D0z-Od-xzw" secondAttribute="trailing" id="EGl-XU-II3"/>
-                        <constraint firstItem="D0z-Od-xzw" firstAttribute="leading" secondItem="GAu-Pe-fIq" secondAttribute="leading" id="wXr-x9-QNH"/>
+                        <constraint firstItem="D0z-Od-xzw" firstAttribute="top" secondItem="AiQ-Hx-6CE" secondAttribute="bottom" constant="29" id="8Qb-sp-w4U"/>
+                        <constraint firstAttribute="trailing" secondItem="D0z-Od-xzw" secondAttribute="trailing" id="C9n-v2-OH1"/>
+                        <constraint firstItem="D0z-Od-xzw" firstAttribute="leading" secondItem="GAu-Pe-fIq" secondAttribute="leading" id="y0D-0t-SN1"/>
                     </constraints>
                 </view>
             </subviews>
@@ -52,6 +74,10 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <namedColor name="Color">
+            <color red="0.6588235294117647" green="0.26666666666666666" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
