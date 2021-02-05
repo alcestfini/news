@@ -29,12 +29,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-6Y-ITg" userLabel="Business View">
-                            <rect key="frame" x="8" y="179" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-6Y-ITg" userLabel="Business View">
+                            <rect key="frame" x="8" y="173" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_busi1" translatesAutoresizingMaskIntoConstraints="NO" id="YQH-Pz-LLf" userLabel="ic">
-                                    <rect key="frame" x="8" y="7" width="30" height="30"/>
+                                    <rect key="frame" x="8" y="9" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </imageView>
@@ -47,27 +46,27 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="bgR-Rn-kcw"/>
+                                <constraint firstAttribute="width" constant="188" id="d88-eO-UDd"/>
+                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RA-v8-Euk">
-                            <rect key="frame" x="20" y="70" width="374" height="86"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE THE CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RA-v8-Euk">
+                            <rect key="frame" x="20" y="70" width="374" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="d9D-mx-MYc"/>
                             </constraints>
-                            <string key="text">CHOOSE 
-THE
- CATEGORIES</string>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HR1-NB-2Eh" userLabel="Health View">
-                            <rect key="frame" x="8" y="386" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HR1-NB-2Eh" userLabel="Health View">
+                            <rect key="frame" x="8" y="380" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_heath1" translatesAutoresizingMaskIntoConstraints="NO" id="3y8-VX-NcR" userLabel="sign out">
                                     <rect key="frame" x="0.0" y="7" width="63" height="43"/>
@@ -84,15 +83,18 @@ THE
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="188" id="ezc-2D-Kc8"/>
+                                <constraint firstAttribute="height" constant="60" id="jxc-HL-OHH"/>
+                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7K-ty-ndS" userLabel="Entertainment View">
-                            <rect key="frame" x="212" y="386" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7K-ty-ndS" userLabel="Entertainment View">
+                            <rect key="frame" x="212" y="380" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_camera" translatesAutoresizingMaskIntoConstraints="NO" id="Tdg-wv-Mb7" userLabel="sign out">
                                     <rect key="frame" x="0.0" y="8" width="55" height="42"/>
@@ -108,15 +110,18 @@ THE
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="AWz-Nd-YBm"/>
+                                <constraint firstAttribute="width" constant="188" id="e1i-AO-F2V"/>
+                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gh0-IM-Lb6" userLabel="Science View">
-                            <rect key="frame" x="212" y="179" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh0-IM-Lb6" userLabel="Science View">
+                            <rect key="frame" x="212" y="173" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_scince1" translatesAutoresizingMaskIntoConstraints="NO" id="29u-sS-bvS" userLabel="sign out">
                                     <rect key="frame" x="0.0" y="7" width="52" height="45"/>
@@ -132,15 +137,17 @@ THE
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="4Jk-0r-e9Y"/>
+                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-qJ-4ta" userLabel="Sports View">
-                            <rect key="frame" x="8" y="282" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-qJ-4ta" userLabel="Sports View">
+                            <rect key="frame" x="8" y="276" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_sports1" translatesAutoresizingMaskIntoConstraints="NO" id="Zhn-JD-vH7" userLabel="sign out">
                                     <rect key="frame" x="0.0" y="7" width="63" height="43"/>
@@ -156,15 +163,18 @@ THE
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="DQs-Hg-n4c"/>
+                                <constraint firstAttribute="width" constant="188" id="Zq7-7G-d2e"/>
+                            </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dt5-nM-KDU" userLabel="Health View">
-                            <rect key="frame" x="212" y="282" width="188" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dt5-nM-KDU" userLabel="Health View">
+                            <rect key="frame" x="212" y="276" width="188" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_tech-1" translatesAutoresizingMaskIntoConstraints="NO" id="OXm-PM-4wE" userLabel="sign out">
                                     <rect key="frame" x="0.0" y="7" width="46" height="45"/>
@@ -190,9 +200,24 @@ THE
                     <viewLayoutGuide key="safeArea" id="nNm-Zv-DbC"/>
                     <color key="backgroundColor" name="Color"/>
                     <constraints>
+                        <constraint firstItem="JjW-qJ-4ta" firstAttribute="leading" secondItem="nNm-Zv-DbC" secondAttribute="leading" constant="8" id="BBJ-lh-WwT"/>
+                        <constraint firstItem="HR1-NB-2Eh" firstAttribute="centerY" secondItem="z7K-ty-ndS" secondAttribute="centerY" id="Eke-M9-0Hn"/>
+                        <constraint firstItem="JjW-qJ-4ta" firstAttribute="width" secondItem="Dt5-nM-KDU" secondAttribute="width" id="H3G-5u-Leb"/>
+                        <constraint firstItem="Gh0-IM-Lb6" firstAttribute="width" secondItem="Ybe-6Y-ITg" secondAttribute="width" id="Iw4-TS-fYs"/>
                         <constraint firstItem="0RA-v8-Euk" firstAttribute="leading" secondItem="R74-ue-SMJ" secondAttribute="leading" constant="20" id="IxX-NN-S4g"/>
+                        <constraint firstItem="nNm-Zv-DbC" firstAttribute="trailing" secondItem="Dt5-nM-KDU" secondAttribute="trailing" constant="14" id="JAM-Mp-jTh"/>
+                        <constraint firstItem="JjW-qJ-4ta" firstAttribute="top" secondItem="Ybe-6Y-ITg" secondAttribute="bottom" constant="43" id="KJ7-Uc-s2p"/>
+                        <constraint firstItem="Ybe-6Y-ITg" firstAttribute="leading" secondItem="nNm-Zv-DbC" secondAttribute="leading" constant="8" id="MgI-x8-wzp"/>
                         <constraint firstItem="0RA-v8-Euk" firstAttribute="top" secondItem="R74-ue-SMJ" secondAttribute="top" constant="70" id="Muj-oY-LbD"/>
+                        <constraint firstItem="JjW-qJ-4ta" firstAttribute="height" secondItem="Dt5-nM-KDU" secondAttribute="height" id="Q7T-Ka-adr"/>
+                        <constraint firstItem="nNm-Zv-DbC" firstAttribute="trailing" secondItem="Gh0-IM-Lb6" secondAttribute="trailing" constant="14" id="ZLh-Sm-1f9"/>
+                        <constraint firstItem="JjW-qJ-4ta" firstAttribute="centerY" secondItem="Dt5-nM-KDU" secondAttribute="centerY" id="aSx-GU-Ez0"/>
+                        <constraint firstItem="Ybe-6Y-ITg" firstAttribute="centerY" secondItem="Gh0-IM-Lb6" secondAttribute="centerY" id="dQN-Wr-8be"/>
+                        <constraint firstItem="HR1-NB-2Eh" firstAttribute="leading" secondItem="nNm-Zv-DbC" secondAttribute="leading" constant="8" id="egj-27-gsC"/>
                         <constraint firstAttribute="trailing" secondItem="0RA-v8-Euk" secondAttribute="trailing" constant="20" id="hGo-fw-maA"/>
+                        <constraint firstItem="nNm-Zv-DbC" firstAttribute="trailing" secondItem="z7K-ty-ndS" secondAttribute="trailing" constant="14" id="l3D-qX-HYc"/>
+                        <constraint firstItem="HR1-NB-2Eh" firstAttribute="top" secondItem="JjW-qJ-4ta" secondAttribute="bottom" constant="44" id="pax-q9-i5Q"/>
+                        <constraint firstItem="Ybe-6Y-ITg" firstAttribute="top" secondItem="0RA-v8-Euk" secondAttribute="bottom" constant="23" id="x8w-e6-R2U"/>
                     </constraints>
                 </view>
             </subviews>

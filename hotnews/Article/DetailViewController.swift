@@ -4,8 +4,8 @@ import WebKit
 class DetailViewController: BaseViewController, WKUIDelegate {
     
     var articleModel: ArticleModel!
-
     var url : String!
+    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {

@@ -76,7 +76,7 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <namedColor name="Color">
-            <color red="0.6588235294117647" green="0.26666666666666666" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.6589999794960022" green="0.2669999897480011" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

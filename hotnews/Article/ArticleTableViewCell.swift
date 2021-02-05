@@ -11,6 +11,7 @@ class ArticleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var articlesLabel: UILabel!
     @IBOutlet weak var articlesView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
